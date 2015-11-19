@@ -1,0 +1,35 @@
+<div class="modal" id="cropModal" aria-hidden="true" style="display: none; z-index: 3000;">
+<div class="modal-dialog">
+    <div class="modal-content">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+            <h4 class="modal-title">Edit Image</h4>
+        </div>
+        <div class="modal-body clearfix">
+            <div class="crop-container">
+                <div class="crop-zoom-control">
+                    <a class="btn btn-sm btn-success crop-zoom-plus" href="">+</a>
+                    <a class="btn btn-sm btn-success crop-zoom-minus" href="">-</a>
+                    <a class="btn btn-sm btn-success crop-rotate" href=""><span class="glyphicon glyphicon-repeat" aria-hidden="true"></span></a>
+                </div>
+                <div id="crop-holder" class="crop-holder overlay">
+                    <div class="crop-opacity-hold">
+                        <div class="crop-resize-container">
+                            <img id="cropImg-opacity"/>
+                        </div>
+                    </div>
+                    <div id="crop-iholder" class="crop-iholder">
+                        <div class="crop-resize-container">
+                            <img id="cropImg"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <a href="#" data-dismiss="modal" class="btn btn-default">Close</a>
+            <a href="#" id="cropImgSave" class="btn btn-primary">Save changes</a>
+        </div>
+    </div>
+</div>
+</div>
